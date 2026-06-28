@@ -4,8 +4,7 @@ import FloatingCTA from './ui/FloatingCTA'
 import './ui/styles.css'
 import './ui/frame-wrapper.css'
 
-// SBMU Learn More URL
-const LEARN_MORE_URL = 'https://sbm-urban.gujarat.gov.in'
+const SPIN_AND_WIN_URL = 'https://lucky-spin-fortune.vercel.app/'
 
 export default function Scene() {
   const [videoLoaded, setVideoLoaded] = useState(false)
@@ -47,10 +46,10 @@ export default function Scene() {
             <ArVideoFrame onVideoPlaying={handleVideoPlaying} />
           </div>
 
-          {/* Learn More Button */}
+          {/* Spin and Win Button */}
           <FloatingCTA 
-            url={LEARN_MORE_URL}
-            text="Learn More"
+            url={SPIN_AND_WIN_URL}
+            text="spin and win"
             videoLoaded={videoLoaded}
           />
         </div>

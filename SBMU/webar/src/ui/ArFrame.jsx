@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import './ar-frame.css'
 
-export default function ArFrame({ banner, video, onVideoPlaying }) {
+export default function ArFrame({ video, onVideoPlaying }) {
   const videoRef = useRef(null)
   const [audioEnabled, setAudioEnabled] = useState(false)
   const [videoReady, setVideoReady] = useState(false)
@@ -143,7 +143,6 @@ export default function ArFrame({ banner, video, onVideoPlaying }) {
 
   return (
     <div className="ar-frame">
-      <img src={banner} className="banner" alt="Banner" />
       <video
         ref={videoRef}
         className="video"
